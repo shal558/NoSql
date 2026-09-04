@@ -1,0 +1,198 @@
+[{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a98a"
+  },
+  "phoneId": 1001,
+  "brand": "Apple",
+  "model": "iPhone 15",
+  "price": 410000,
+  "year": 2023,
+  "storage": 128,
+  "colors": [
+    "Black",
+    "Blue",
+    "Pink",
+    "Green",
+    "White"
+  ],
+  "specifications": {
+    "screen": 6.1,
+    "ram": 6,
+    "camera": 48
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a98b"
+  },
+  "phoneId": 1002,
+  "brand": "Samsung",
+  "model": "Galaxy S24",
+  "price": 390000,
+  "year": 2024,
+  "storage": 256,
+  "colors": [
+    "Black",
+    "Violet",
+    "Gray"
+  ],
+  "specifications": {
+    "screen": 6.2,
+    "ram": 8,
+    "camera": 50
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a98c"
+  },
+  "phoneId": 1003,
+  "brand": "Xiaomi",
+  "model": "Xiaomi 14",
+  "price": 320000,
+  "year": 2024,
+  "storage": 512,
+  "colors": [
+    "Black",
+    "White",
+    "Green"
+  ],
+  "specifications": {
+    "screen": 6.36,
+    "ram": 12,
+    "camera": 50
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a98d"
+  },
+  "phoneId": 1004,
+  "brand": "Google",
+  "model": "Pixel 8",
+  "price": 290000,
+  "year": 2023,
+  "storage": 128,
+  "colors": [
+    "Black",
+    "Hazel"
+  ],
+  "specifications": {
+    "screen": 6.2,
+    "ram": 8,
+    "camera": 50
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a98e"
+  },
+  "phoneId": 1005,
+  "brand": "OnePlus",
+  "model": "OnePlus 12",
+  "price": 350000,
+  "year": 2024,
+  "storage": 256,
+  "colors": [
+    "Black",
+    "Green"
+  ],
+  "specifications": {
+    "screen": 6.82,
+    "ram": 12,
+    "camera": 50
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a98f"
+  },
+  "phoneId": 1006,
+  "brand": "Apple",
+  "model": "iPhone 14",
+  "price": 350000,
+  "year": 2022,
+  "storage": 128,
+  "colors": [
+    "Black",
+    "Blue",
+    "Purple"
+  ],
+  "specifications": {
+    "screen": 6.1,
+    "ram": 6,
+    "camera": 12
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a990"
+  },
+  "phoneId": 1007,
+  "brand": "Samsung",
+  "model": "Galaxy A55",
+  "price": 190000,
+  "year": 2024,
+  "storage": 256,
+  "colors": [
+    "Black",
+    "Blue",
+    "Yellow"
+  ],
+  "specifications": {
+    "screen": 6.6,
+    "ram": 8,
+    "camera": 50
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a991"
+  },
+  "phoneId": 1008,
+  "brand": "Xiaomi",
+  "model": "Redmi Note 13",
+  "price": 150000,
+  "year": 2024,
+  "storage": 256,
+  "colors": [
+    "Black",
+    "Blue",
+    "Green"
+  ],
+  "specifications": {
+    "screen": 6.67,
+    "ram": 8,
+    "camera": 108
+  },
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a9a5b84c1a35eae8891a993"
+  },
+  "phoneId": 1010,
+  "brand": "Honor",
+  "model": "Magic6 Pro",
+  "price": 370000,
+  "year": 2024,
+  "storage": 512,
+  "colors": [
+    "Black",
+    "Green",
+    "Blue"
+  ],
+  "specifications": {
+    "screen": 6.8,
+    "ram": 12,
+    "camera": 50
+  },
+  "available": true
+}]
