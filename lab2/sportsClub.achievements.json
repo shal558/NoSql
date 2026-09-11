@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "6aa1003b64d2e73ac1b2b62d"
+    "$oid": "6aa38cb21ae676dea11166b9"
   },
   "title": "Золото ЧР 2024",
   "year": 2024,
@@ -13,7 +13,7 @@
 },
 {
   "_id": {
-    "$oid": "6aa1003b64d2e73ac1b2b62e"
+    "$oid": "6aa38cb21ae676dea11166ba"
   },
   "title": "Мастер спорта",
   "year": 2024,
@@ -24,7 +24,7 @@
 },
 {
   "_id": {
-    "$oid": "6aa1003b64d2e73ac1b2b62f"
+    "$oid": "6aa38cb21ae676dea11166bb"
   },
   "title": "Кубок Мира 2025",
   "year": 2025,
@@ -36,7 +36,7 @@
 },
 {
   "_id": {
-    "$oid": "6aa1003b64d2e73ac1b2b630"
+    "$oid": "6aa38cb21ae676dea11166bc"
   },
   "title": "Олимпийское золото 2024",
   "year": 2024,
@@ -48,7 +48,7 @@
 },
 {
   "_id": {
-    "$oid": "6aa1003b64d2e73ac1b2b631"
+    "$oid": "6aa38cb21ae676dea11166bd"
   },
   "title": "Чемпионка Европы",
   "year": 2025,
@@ -57,4 +57,117 @@
     "Европа",
     "Золото"
   ]
+},
+{
+  "_id": {
+    "$oid": "6aa38cb21ae676dea11166be"
+  },
+  "title": "Серебро ЧР 2025",
+  "year": 2025,
+  "athleteId": 104,
+  "tags": [
+    "РФ",
+    "Серебро",
+    "Плавание"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38cb21ae676dea11166bf"
+  },
+  "title": "Победитель Кубка Казахстана",
+  "year": 2025,
+  "athleteId": 105,
+  "tags": [
+    "Казахстан",
+    "Золото"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38cb21ae676dea11166c0"
+  },
+  "title": "Чемпион Казахстана",
+  "year": 2024,
+  "athleteId": 106,
+  "tags": [
+    "Казахстан",
+    "Золото",
+    "Баскетбол"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38cb21ae676dea11166c1"
+  },
+  "title": "Серебро Кубка Казахстана",
+  "year": 2025,
+  "athleteId": 107,
+  "tags": [
+    "Казахстан",
+    "Серебро",
+    "Волейбол"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38cb21ae676dea11166c2"
+  },
+  "title": "Лучший игрок турнира",
+  "year": 2025,
+  "athleteId": 108,
+  "tags": [
+    "Баскетбол",
+    "Награда"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa390601ae676dea11166d3"
+  },
+  "achievementId": 301,
+  "athleteId": 1001,
+  "title": "City Basketball Championship",
+  "year": 2025,
+  "place": 1
+},
+{
+  "_id": {
+    "$oid": "6aa390601ae676dea11166d4"
+  },
+  "achievementId": 302,
+  "athleteId": 1001,
+  "title": "University Basketball Cup",
+  "year": 2026,
+  "place": 2
+},
+{
+  "_id": {
+    "$oid": "6aa390601ae676dea11166d5"
+  },
+  "achievementId": 303,
+  "athleteId": 1002,
+  "title": "Almaty Football Cup",
+  "year": 2025,
+  "place": 1
+},
+{
+  "_id": {
+    "$oid": "6aa390601ae676dea11166d6"
+  },
+  "achievementId": 304,
+  "athleteId": 1003,
+  "title": "Kazakhstan Boxing Championship",
+  "year": 2026,
+  "place": 3
+},
+{
+  "_id": {
+    "$oid": "6aa390601ae676dea11166d7"
+  },
+  "achievementId": 305,
+  "athleteId": 1007,
+  "title": "Karate Open Almaty",
+  "year": 2026,
+  "place": 1
 }]
