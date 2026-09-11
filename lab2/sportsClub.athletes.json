@@ -1,0 +1,364 @@
+[{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166a5"
+  },
+  "athleteId": 101,
+  "name": "Иван Кузнецов",
+  "age": 21,
+  "gender": "М",
+  "sport": "Плавание",
+  "coachId": 201
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166a6"
+  },
+  "athleteId": 102,
+  "name": "Максим Орлов",
+  "age": 23,
+  "gender": "М",
+  "sport": "Легкая атлетика",
+  "coachId": 202
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166a7"
+  },
+  "athleteId": 103,
+  "name": "Анна Смирнова",
+  "age": 20,
+  "gender": "Ж",
+  "sport": "Спортивная гимнастика",
+  "coachId": 203
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166a8"
+  },
+  "athleteId": 104,
+  "name": "Артем Волков",
+  "age": 22,
+  "gender": "М",
+  "sport": "Плавание",
+  "coachId": 201
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166a9"
+  },
+  "athleteId": 105,
+  "name": "Мария Попова",
+  "age": 19,
+  "gender": "Ж",
+  "sport": "Легкая атлетика",
+  "coachId": 202
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166aa"
+  },
+  "athleteId": 106,
+  "name": "Даниил Морозов",
+  "age": 24,
+  "gender": "М",
+  "sport": "Баскетбол",
+  "coachId": 204
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166ab"
+  },
+  "athleteId": 107,
+  "name": "София Белова",
+  "age": 21,
+  "gender": "Ж",
+  "sport": "Волейбол",
+  "coachId": 205
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166ac"
+  },
+  "athleteId": 108,
+  "name": "Никита Федоров",
+  "age": 20,
+  "gender": "М",
+  "sport": "Баскетбол",
+  "coachId": 204
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166ad"
+  },
+  "athleteId": 109,
+  "name": "Алина Захарова",
+  "age": 22,
+  "gender": "Ж",
+  "sport": "Волейбол",
+  "coachId": 205
+},
+{
+  "_id": {
+    "$oid": "6aa38c941ae676dea11166ae"
+  },
+  "athleteId": 110,
+  "name": "Роман Егоров",
+  "age": 23,
+  "gender": "М",
+  "sport": "Плавание",
+  "coachId": 201
+},
+{
+  "_id": {
+    "$oid": "6aa38eb51ae676dea11166c3"
+  },
+  "athleteId": 1001,
+  "name": "Aibek",
+  "age": 20,
+  "sport": "Basketball",
+  "team": "Almaty Lions",
+  "position": "Guard",
+  "gpa": 3.5,
+  "contact": {
+    "city": "Almaty",
+    "email": "aibek@example.com"
+  },
+  "skills": [
+    "Dribbling",
+    "Shooting",
+    "Defense",
+    "Fast Break"
+  ],
+  "trainingResults": [
+    {
+      "exercise": "Vertical Jump",
+      "result": 75,
+      "unit": "cm"
+    },
+    {
+      "exercise": "Sprint 30m",
+      "result": 4.5,
+      "unit": "sec"
+    },
+    {
+      "exercise": "Bench Press",
+      "result": 80,
+      "unit": "kg"
+    }
+  ],
+  "coachId": 201
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166c4"
+  },
+  "athleteId": 1001,
+  "name": "Aibek",
+  "age": 20,
+  "sport": "Basketball",
+  "team": "Almaty Lions",
+  "position": "Guard",
+  "gpa": 3.5,
+  "contact": {
+    "city": "Almaty",
+    "email": "aibek@example.com"
+  },
+  "skills": [
+    "Dribbling",
+    "Shooting",
+    "Defense"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166c5"
+  },
+  "athleteId": 1002,
+  "name": "Dias",
+  "age": 21,
+  "sport": "Football",
+  "team": "Almaty United",
+  "position": "Forward",
+  "gpa": 3.2,
+  "contact": {
+    "city": "Almaty",
+    "email": "dias@example.com"
+  },
+  "skills": [
+    "Speed",
+    "Passing",
+    "Shooting"
+  ],
+  "coachId": 202
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166c6"
+  },
+  "athleteId": 1003,
+  "name": "Arman",
+  "age": 19,
+  "sport": "Boxing",
+  "team": "Almaty Fighters",
+  "position": "Welterweight",
+  "gpa": 3.7,
+  "contact": {
+    "city": "Almaty",
+    "email": "arman@example.com"
+  },
+  "skills": [
+    "Jab",
+    "Footwork",
+    "Defense"
+  ],
+  "coachId": 203
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166c7"
+  },
+  "athleteId": 1004,
+  "name": "Nursultan",
+  "age": 22,
+  "sport": "Basketball",
+  "team": "Almaty Lions",
+  "position": "Center",
+  "gpa": 3.1,
+  "contact": {
+    "city": "Astana",
+    "email": "nursultan@example.com"
+  },
+  "skills": [
+    "Rebounding",
+    "Defense",
+    "Dunking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166c8"
+  },
+  "athleteId": 1005,
+  "name": "Madi",
+  "age": 20,
+  "sport": "Swimming",
+  "team": "Almaty Dolphins",
+  "position": "Freestyle",
+  "gpa": 3.8,
+  "contact": {
+    "city": "Almaty",
+    "email": "madi@example.com"
+  },
+  "skills": [
+    "Freestyle",
+    "Butterfly",
+    "Endurance"
+  ],
+  "coachId": 204
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166c9"
+  },
+  "athleteId": 1006,
+  "name": "Erlan",
+  "age": 23,
+  "sport": "Tennis",
+  "team": "Almaty Tennis Club",
+  "position": "Singles",
+  "gpa": 3.4,
+  "contact": {
+    "city": "Shymkent",
+    "email": "erlan@example.com"
+  },
+  "skills": [
+    "Serve",
+    "Forehand",
+    "Backhand"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166ca"
+  },
+  "athleteId": 1007,
+  "name": "Bekzat",
+  "age": 21,
+  "sport": "Karate",
+  "team": "Almaty Dojo",
+  "position": "Kumite",
+  "gpa": 3.6,
+  "contact": {
+    "city": "Almaty",
+    "email": "bekzat@example.com"
+  },
+  "skills": [
+    "Kicks",
+    "Punches",
+    "Blocks"
+  ],
+  "coachId": 205
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166cb"
+  },
+  "athleteId": 1008,
+  "name": "Sanzhar",
+  "age": 20,
+  "sport": "Volleyball",
+  "team": "Almaty Stars",
+  "position": "Setter",
+  "gpa": 3.3,
+  "contact": {
+    "city": "Taraz",
+    "email": "sanzhar@example.com"
+  },
+  "skills": [
+    "Serving",
+    "Setting",
+    "Blocking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166cc"
+  },
+  "athleteId": 1009,
+  "name": "Timur",
+  "age": 22,
+  "sport": "Athletics",
+  "team": "Almaty Athletics",
+  "position": "Sprinter",
+  "gpa": 3.9,
+  "contact": {
+    "city": "Almaty",
+    "email": "timur@example.com"
+  },
+  "skills": [
+    "Sprint",
+    "Start",
+    "Endurance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa38f161ae676dea11166cd"
+  },
+  "athleteId": 1010,
+  "name": "Daniyar",
+  "age": 19,
+  "sport": "Wrestling",
+  "team": "Almaty Wrestlers",
+  "position": "Freestyle",
+  "gpa": 3,
+  "contact": {
+    "city": "Karaganda",
+    "email": "daniyar@example.com"
+  },
+  "skills": [
+    "Takedown",
+    "Grappling",
+    "Defense"
+  ]
+}]

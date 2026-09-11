@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166af"
+  },
+  "athleteId": 101,
+  "height": 184,
+  "weight": 82,
+  "speed": 9.8,
+  "endurance": 92,
+  "strength": 88
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b0"
+  },
+  "athleteId": 102,
+  "height": 181,
+  "weight": 76,
+  "speed": 9.4,
+  "endurance": 89,
+  "strength": 85
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b1"
+  },
+  "athleteId": 103,
+  "height": 170,
+  "weight": 58,
+  "speed": 9.1,
+  "endurance": 91,
+  "strength": 79
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b2"
+  },
+  "athleteId": 104,
+  "height": 187,
+  "weight": 84,
+  "speed": 9.7,
+  "endurance": 94,
+  "strength": 90
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b3"
+  },
+  "athleteId": 105,
+  "height": 168,
+  "weight": 56,
+  "speed": 9.3,
+  "endurance": 87,
+  "strength": 76
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b4"
+  },
+  "athleteId": 106,
+  "height": 192,
+  "weight": 91,
+  "speed": 8.9,
+  "endurance": 88,
+  "strength": 94
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b5"
+  },
+  "athleteId": 107,
+  "height": 178,
+  "weight": 67,
+  "speed": 9.2,
+  "endurance": 90,
+  "strength": 82
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b6"
+  },
+  "athleteId": 108,
+  "height": 189,
+  "weight": 86,
+  "speed": 9,
+  "endurance": 91,
+  "strength": 92
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b7"
+  },
+  "athleteId": 109,
+  "height": 175,
+  "weight": 64,
+  "speed": 9.3,
+  "endurance": 93,
+  "strength": 80
+},
+{
+  "_id": {
+    "$oid": "6aa38ca41ae676dea11166b8"
+  },
+  "athleteId": 110,
+  "height": 182,
+  "weight": 79,
+  "speed": 9.6,
+  "endurance": 95,
+  "strength": 87
+},
+{
+  "_id": {
+    "$oid": "6aa3907e1ae676dea11166d8"
+  },
+  "dataId": 401,
+  "athleteId": 1001,
+  "height": 184,
+  "weight": 85,
+  "speed": 4.5,
+  "trainingDate": "2026-09-01"
+},
+{
+  "_id": {
+    "$oid": "6aa3907e1ae676dea11166d9"
+  },
+  "dataId": 402,
+  "athleteId": 1002,
+  "height": 178,
+  "weight": 72,
+  "speed": 4.3,
+  "trainingDate": "2026-09-01"
+},
+{
+  "_id": {
+    "$oid": "6aa3907e1ae676dea11166da"
+  },
+  "dataId": 403,
+  "athleteId": 1003,
+  "height": 180,
+  "weight": 75,
+  "speed": 4.6,
+  "trainingDate": "2026-09-02"
+},
+{
+  "_id": {
+    "$oid": "6aa3907e1ae676dea11166db"
+  },
+  "dataId": 404,
+  "athleteId": 1004,
+  "height": 198,
+  "weight": 95,
+  "speed": 5,
+  "trainingDate": "2026-09-02"
+},
+{
+  "_id": {
+    "$oid": "6aa3907e1ae676dea11166dc"
+  },
+  "dataId": 405,
+  "athleteId": 1005,
+  "height": 182,
+  "weight": 76,
+  "speed": 4.8,
+  "trainingDate": "2026-09-03"
+}]

@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "6aa38c8b1ae676dea11166a0"
+  },
+  "coachId": 201,
+  "name": "Александр Петров",
+  "specialization": "Плавание",
+  "experience": 12
+},
+{
+  "_id": {
+    "$oid": "6aa38c8b1ae676dea11166a1"
+  },
+  "coachId": 202,
+  "name": "Дмитрий Соколов",
+  "specialization": "Легкая атлетика",
+  "experience": 8
+},
+{
+  "_id": {
+    "$oid": "6aa38c8b1ae676dea11166a2"
+  },
+  "coachId": 203,
+  "name": "Елена Иванова",
+  "specialization": "Спортивная гимнастика",
+  "experience": 10
+},
+{
+  "_id": {
+    "$oid": "6aa38c8b1ae676dea11166a3"
+  },
+  "coachId": 204,
+  "name": "Сергей Волков",
+  "specialization": "Баскетбол",
+  "experience": 15
+},
+{
+  "_id": {
+    "$oid": "6aa38c8b1ae676dea11166a4"
+  },
+  "coachId": 205,
+  "name": "Марина Кузнецова",
+  "specialization": "Волейбол",
+  "experience": 9
+},
+{
+  "_id": {
+    "$oid": "6aa3901c1ae676dea11166ce"
+  },
+  "coachId": 201,
+  "name": "Sergey Ivanov",
+  "sport": "Basketball",
+  "experience": 10,
+  "phone": "+77010000001"
+},
+{
+  "_id": {
+    "$oid": "6aa3901c1ae676dea11166cf"
+  },
+  "coachId": 202,
+  "name": "Andrey Petrov",
+  "sport": "Football",
+  "experience": 8,
+  "phone": "+77010000002"
+},
+{
+  "_id": {
+    "$oid": "6aa3901c1ae676dea11166d0"
+  },
+  "coachId": 203,
+  "name": "Marat Akhmetov",
+  "sport": "Boxing",
+  "experience": 12,
+  "phone": "+77010000003"
+},
+{
+  "_id": {
+    "$oid": "6aa3901c1ae676dea11166d1"
+  },
+  "coachId": 204,
+  "name": "Dmitry Sokolov",
+  "sport": "Swimming",
+  "experience": 7,
+  "phone": "+77010000004"
+},
+{
+  "_id": {
+    "$oid": "6aa3901c1ae676dea11166d2"
+  },
+  "coachId": 205,
+  "name": "Rustam Karimov",
+  "sport": "Karate",
+  "experience": 15,
+  "phone": "+77010000005"
+},
+{
+  "_id": {
+    "$oid": "6aa390d41ae676dea11166dd"
+  },
+  "coachId": 201,
+  "name": "Sergey Ivanov",
+  "sport": "Basketball",
+  "experience": 10
+}]
