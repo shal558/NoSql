@@ -1,0 +1,163 @@
+[{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a8935"
+  },
+  "productId": 1001,
+  "name": "iPhone 15 Pro",
+  "price": 360000,
+  "category": "Смартфоны",
+  "brand": "Apple",
+  "colors": [
+    "Black",
+    "White",
+    "Blue",
+    "White"
+  ],
+  "specifications": {
+    "memory": "256GB",
+    "ram": "8GB"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a8936"
+  },
+  "productId": 1002,
+  "name": "Galaxy S24",
+  "price": 390000,
+  "category": "Смартфоны",
+  "brand": "Samsung",
+  "colors": [
+    "Black",
+    "Gray",
+    "Blue"
+  ],
+  "specifications": {
+    "memory": "256GB",
+    "ram": "8GB"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a8937"
+  },
+  "productId": 1003,
+  "name": "MacBook Air M3",
+  "price": 650000,
+  "category": "Ноутбуки",
+  "brand": "Apple",
+  "colors": [
+    "Silver",
+    "Gray"
+  ],
+  "specifications": {
+    "memory": "512GB",
+    "ram": "16GB"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a8938"
+  },
+  "productId": 1004,
+  "name": "Lenovo Legion 5",
+  "price": 520000,
+  "category": "Ноутбуки",
+  "brand": "Lenovo",
+  "colors": [
+    "Black"
+  ],
+  "specifications": {
+    "memory": "1TB",
+    "ram": "16GB"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a8939"
+  },
+  "productId": 1005,
+  "name": "Redmi Note 13",
+  "price": 130000,
+  "category": "Смартфоны",
+  "brand": "Xiaomi",
+  "colors": [
+    "Black",
+    "Green"
+  ],
+  "specifications": {
+    "memory": "256GB",
+    "ram": "8GB"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a893a"
+  },
+  "productId": 1006,
+  "name": "iPad Air",
+  "price": 300000,
+  "category": "Планшеты",
+  "brand": "Apple",
+  "colors": [
+    "Gray",
+    "Blue"
+  ],
+  "specifications": {
+    "memory": "256GB",
+    "ram": "8GB"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a893b"
+  },
+  "productId": 1007,
+  "name": "Galaxy Tab S9",
+  "price": 280000,
+  "category": "Планшеты",
+  "brand": "Samsung",
+  "colors": [
+    "Gray",
+    "Black"
+  ],
+  "specifications": {
+    "memory": "256GB",
+    "ram": "12GB"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a893c"
+  },
+  "productId": 1008,
+  "name": "AirPods Pro 2",
+  "price": 110000,
+  "category": "Аксессуары",
+  "brand": "Apple",
+  "colors": [
+    "White"
+  ],
+  "specifications": {
+    "memory": "N/A",
+    "ram": "N/A"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa393dedd77459d7a8a893d"
+  },
+  "productId": 1009,
+  "name": "Xiaomi Watch S3",
+  "price": 90000,
+  "category": "Аксессуары",
+  "brand": "Xiaomi",
+  "colors": [
+    "Black",
+    "Silver"
+  ],
+  "specifications": {
+    "memory": "32GB",
+    "ram": "2GB"
+  }
+}]
