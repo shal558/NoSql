@@ -1,0 +1,158 @@
+[{
+  "_id": {
+    "$oid": "6aaa2eec2d19657bb855f498"
+  },
+  "studentId": 1001,
+  "name": "Aibek",
+  "age": 21,
+  "group": "IS-24-1",
+  "gpa": 3.8,
+  "active": true,
+  "contact": {
+    "city": "Almaty",
+    "email": "aibek@example.com"
+  },
+  "skills": [
+    "Java",
+    "MongoDB",
+    "Docker"
+  ],
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "6aaa2ef82d19657bb855f499"
+  },
+  "studentId": 1002,
+  "name": "Aliya",
+  "age": 19,
+  "group": "IS-24-1",
+  "gpa": 3.8,
+  "active": true,
+  "contact": {
+    "city": "Almaty",
+    "email": "aliya@example.com"
+  },
+  "skills": [
+    "Python",
+    "MongoDB"
+  ],
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "6aaa2ef82d19657bb855f49a"
+  },
+  "studentId": 1003,
+  "name": "Damir",
+  "age": 21,
+  "group": "IS-24-2",
+  "gpa": 2.9,
+  "active": true,
+  "contact": {
+    "city": "Astana",
+    "email": "damir@example.com"
+  },
+  "skills": [
+    "Java",
+    "Docker"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aaa2ef82d19657bb855f49b"
+  },
+  "studentId": 1004,
+  "name": "Aruzhan",
+  "age": 20,
+  "group": "IS-24-1",
+  "gpa": 4,
+  "active": true,
+  "contact": {
+    "city": "Almaty",
+    "email": "aruzhan@example.com"
+  },
+  "skills": [
+    "Java",
+    "MongoDB",
+    "Python"
+  ],
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "6aaa2ef82d19657bb855f49d"
+  },
+  "studentId": 1006,
+  "name": "Madina",
+  "age": 19,
+  "group": "IS-24-1",
+  "gpa": 3.7,
+  "active": true,
+  "contact": {
+    "city": "Almaty",
+    "email": "madina@example.com"
+  },
+  "skills": [
+    "Python",
+    "MongoDB"
+  ],
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "6aaa2ef82d19657bb855f49f"
+  },
+  "studentId": 1008,
+  "name": "Amina",
+  "age": 20,
+  "group": "IS-24-2",
+  "gpa": 3.9,
+  "active": true,
+  "contact": {
+    "city": "Astana",
+    "email": "amina@example.com"
+  },
+  "skills": [
+    "Java",
+    "MongoDB"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aaa2ef82d19657bb855f4a0"
+  },
+  "studentId": 1009,
+  "name": "Bekzat",
+  "age": 21,
+  "group": "IS-24-3",
+  "gpa": 3.1,
+  "active": true,
+  "contact": {
+    "city": "Almaty",
+    "email": "bekzat@example.com"
+  },
+  "skills": [
+    "C++",
+    "Python"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aaa2ef82d19657bb855f4a2"
+  },
+  "studentId": 1011,
+  "name": "Ermek",
+  "age": 22,
+  "group": "IS-24-2",
+  "gpa": 3.6,
+  "active": true,
+  "contact": {
+    "city": "Almaty",
+    "email": "ermek@example.com"
+  },
+  "skills": [
+    "MongoDB",
+    "Docker"
+  ]
+}]
