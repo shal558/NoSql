@@ -1,0 +1,140 @@
+{
+  "lab": "Лабораторная работа №5",
+  "variant": 8,
+  "topic": "Складской учёт",
+  "structures": [
+    "String",
+    "Hash",
+    "List"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "title": "Проверка подключения Redis",
+      "commands": [
+        "PING"
+      ],
+      "expected_result": [
+        "PONG"
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Карточка товара",
+      "commands": [
+        "HSET cache:product:1001 product_id \"1001\" name \"Ноутбук Lenovo\" category \"Электроника\" warehouse_id \"1\"",
+        "HGETALL cache:product:1001"
+      ],
+      "expected_result": [
+        "(integer) 4",
+        "1) \"product_id\"",
+        "2) \"1001\"",
+        "3) \"name\"",
+        "4) \"Ноутбук Lenovo\"",
+        "5) \"category\"",
+        "6) \"Электроника\"",
+        "7) \"warehouse_id\"",
+        "8) \"1\""
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Информация о складе",
+      "commands": [
+        "HSET cache:warehouse:1 warehouse_id \"1\" name \"Основной склад\" city \"Алматы\" category \"Электроника\"",
+        "HGETALL cache:warehouse:1"
+      ],
+      "expected_result": [
+        "(integer) 4",
+        "1) \"warehouse_id\"",
+        "2) \"1\"",
+        "3) \"name\"",
+        "4) \"Основной склад\"",
+        "5) \"city\"",
+        "6) \"Алматы\"",
+        "7) \"category\"",
+        "8) \"Электроника\""
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Сессия и TTL",
+      "commands": [
+        "HSET session:5001 user_id \"101\" role \"warehouse_manager\" language \"ru\" last_section \"products\"",
+        "EXPIRE session:5001 600",
+        "TTL session:5001"
+      ],
+      "expected_result": [
+        "(integer) 4",
+        "(integer) 1",
+        "(integer) 600"
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Последние просмотренные товары",
+      "commands": [
+        "LPUSH recent:employee:101 1001",
+        "LPUSH recent:employee:101 1002",
+        "LPUSH recent:employee:101 1003",
+        "LRANGE recent:employee:101 0 -1"
+      ],
+      "expected_result": [
+        "(integer) 1",
+        "(integer) 2",
+        "(integer) 3",
+        "1) \"1003\"",
+        "2) \"1002\"",
+        "3) \"1001\""
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Счётчик обращений",
+      "commands": [
+        "SET product:1001:views 0",
+        "INCR product:1001:views",
+        "INCR product:1001:views",
+        "INCR product:1001:views",
+        "GET product:1001:views"
+      ],
+      "expected_result": [
+        "OK",
+        "(integer) 1",
+        "(integer) 2",
+        "(integer) 3",
+        "\"3\""
+      ]
+    },
+    {
+      "step": 7,
+      "title": "Изменение сессии и инвалидирование кэша",
+      "commands": [
+        "HSET session:5001 language \"en\"",
+        "HGET session:5001 language",
+        "EXISTS cache:product:1001",
+        "DEL cache:product:1001",
+        "EXISTS cache:product:1001"
+      ],
+      "expected_result": [
+        "(integer) 0",
+        "\"en\"",
+        "(integer) 1",
+        "(integer) 1",
+        "(integer) 0"
+      ]
+    },
+    {
+      "step": 8,
+      "title": "TTL временного ключа",
+      "commands": [
+        "SET cache:ttl-demo \"temporary\" EX 20",
+        "TTL cache:ttl-demo"
+      ],
+      "expected_result": [
+        "OK",
+        "(integer) 20"
+      ]
+    }
+  ]
+}
