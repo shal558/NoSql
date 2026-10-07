@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c695a"
+  },
+  "teacher_id": "T001",
+  "lesson_date": {
+    "$date": "2026-10-08T00:00:00.000Z"
+  },
+  "lesson_time": "09:00",
+  "course_id": "NOSQL-301",
+  "group_id": "IS-24-1",
+  "course_name": "NoSQL Technologies",
+  "teacher_name": "A. Teacher",
+  "room": "305"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c695b"
+  },
+  "teacher_id": "T001",
+  "lesson_date": {
+    "$date": "2026-10-08T00:00:00.000Z"
+  },
+  "lesson_time": "09:00",
+  "course_id": "NOSQL-301",
+  "group_id": "IS-24-2",
+  "course_name": "NoSQL Technologies",
+  "teacher_name": "A. Teacher",
+  "room": "305"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c695c"
+  },
+  "teacher_id": "T002",
+  "lesson_date": {
+    "$date": "2026-10-08T00:00:00.000Z"
+  },
+  "lesson_time": "11:00",
+  "course_id": "WEB-210",
+  "group_id": "IS-24-1",
+  "course_name": "Web Development",
+  "teacher_name": "B. Teacher",
+  "room": "415"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c695d"
+  },
+  "teacher_id": "T002",
+  "lesson_date": {
+    "$date": "2026-10-08T00:00:00.000Z"
+  },
+  "lesson_time": "11:00",
+  "course_id": "WEB-210",
+  "group_id": "IS-24-2",
+  "course_name": "Web Development",
+  "teacher_name": "B. Teacher",
+  "room": "410"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c695e"
+  },
+  "teacher_id": "T003",
+  "lesson_date": {
+    "$date": "2026-10-09T00:00:00.000Z"
+  },
+  "lesson_time": "10:00",
+  "course_id": "DB-205",
+  "group_id": "IS-24-1",
+  "course_name": "Database Systems",
+  "teacher_name": "C. Teacher",
+  "room": "212"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c695f"
+  },
+  "teacher_id": "T003",
+  "lesson_date": {
+    "$date": "2026-10-09T00:00:00.000Z"
+  },
+  "lesson_time": "10:00",
+  "course_id": "DB-205",
+  "group_id": "IS-24-2",
+  "course_name": "Database Systems",
+  "teacher_name": "C. Teacher",
+  "room": "212"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c6961"
+  },
+  "teacher_id": "T004",
+  "lesson_date": {
+    "$date": "2026-10-10T00:00:00.000Z"
+  },
+  "lesson_time": "09:00",
+  "course_id": "PROG-201",
+  "group_id": "IS-24-2",
+  "course_name": "Programming",
+  "teacher_name": "D. Teacher",
+  "room": "301"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c6962"
+  },
+  "teacher_id": "T005",
+  "lesson_date": {
+    "$date": "2026-10-10T00:00:00.000Z"
+  },
+  "lesson_time": "11:00",
+  "course_id": "MATH-101",
+  "group_id": "IS-24-1",
+  "course_name": "Mathematics",
+  "teacher_name": "E. Teacher",
+  "room": "205"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c6963"
+  },
+  "teacher_id": "T006",
+  "lesson_date": {
+    "$date": "2026-10-11T00:00:00.000Z"
+  },
+  "lesson_time": "10:00",
+  "course_id": "OS-202",
+  "group_id": "IS-24-1",
+  "course_name": "Operating Systems",
+  "teacher_name": "F. Teacher",
+  "room": "310"
+},
+{
+  "_id": {
+    "$oid": "6ac5df6d955909375a7c6964"
+  },
+  "teacher_id": "T007",
+  "lesson_date": {
+    "$date": "2026-10-12T00:00:00.000Z"
+  },
+  "lesson_time": "09:00",
+  "course_id": "SE-220",
+  "group_id": "IS-24-1",
+  "course_name": "Software Engineering",
+  "teacher_name": "G. Teacher",
+  "room": "315"
+}]
