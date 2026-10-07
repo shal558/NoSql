@@ -1,0 +1,386 @@
+[
+  {
+    "productId": 101,
+    "name": "Laptop Lenovo ThinkPad",
+    "category": "Notebook",
+    "price": 420000,
+    "stock": 15,
+    "rating": 4.7,
+    "tags": [
+      "office",
+      "programming",
+      "business"
+    ]
+  },
+  {
+    "productId": 102,
+    "name": "Laptop ASUS ROG",
+    "category": "Notebook",
+    "price": 620000,
+    "stock": 8,
+    "rating": 4.9,
+    "tags": [
+      "gaming",
+      "high-end",
+      "rgb"
+    ]
+  },
+  {
+    "productId": 103,
+    "name": "Laptop HP Pavilion",
+    "category": "Notebook",
+    "price": 350000,
+    "stock": 20,
+    "rating": 4.3,
+    "tags": [
+      "budget",
+      "office",
+      "student"
+    ]
+  },
+  {
+    "productId": 104,
+    "name": "Laptop Apple MacBook Pro",
+    "category": "Notebook",
+    "price": 950000,
+    "stock": 5,
+    "rating": 4.9,
+    "tags": [
+      "premium",
+      "ios",
+      "design"
+    ]
+  },
+  {
+    "productId": 105,
+    "name": "Laptop Acer Aspire",
+    "category": "Notebook",
+    "price": 280000,
+    "stock": 0,
+    "rating": 4.1,
+    "tags": [
+      "budget",
+      "office"
+    ]
+  },
+  {
+    "productId": 106,
+    "name": "Phone Samsung Galaxy S24",
+    "category": "Smartphone",
+    "price": 510000,
+    "stock": 25,
+    "rating": 4.8,
+    "tags": [
+      "mobile",
+      "android",
+      "photo"
+    ]
+  },
+  {
+    "productId": 107,
+    "name": "Phone Apple iPhone 15",
+    "category": "Smartphone",
+    "price": 650000,
+    "stock": 14,
+    "rating": 4.9,
+    "tags": [
+      "mobile",
+      "ios",
+      "premium"
+    ]
+  },
+  {
+    "productId": 108,
+    "name": "Phone Xiaomi 14",
+    "category": "Smartphone",
+    "price": 380000,
+    "stock": 30,
+    "rating": 4.6,
+    "tags": [
+      "mobile",
+      "android",
+      "budget"
+    ]
+  },
+  {
+    "productId": 109,
+    "name": "Phone Google Pixel 8",
+    "category": "Smartphone",
+    "price": 450000,
+    "stock": 12,
+    "rating": 4.7,
+    "tags": [
+      "mobile",
+      "android",
+      "photo"
+    ]
+  },
+  {
+    "productId": 110,
+    "name": "Phone Infinix Note",
+    "category": "Smartphone",
+    "price": 120000,
+    "stock": 40,
+    "rating": 4.2,
+    "tags": [
+      "budget",
+      "android"
+    ]
+  },
+  {
+    "productId": 111,
+    "name": "Monitor LG UltraWide",
+    "category": "Monitor",
+    "price": 180000,
+    "stock": 10,
+    "rating": 4.5,
+    "tags": [
+      "office",
+      "ips",
+      "display"
+    ]
+  },
+  {
+    "productId": 112,
+    "name": "Monitor ASUS TUF Gaming",
+    "category": "Monitor",
+    "price": 240000,
+    "stock": 7,
+    "rating": 4.7,
+    "tags": [
+      "gaming",
+      "144hz",
+      "display"
+    ]
+  },
+  {
+    "productId": 113,
+    "name": "Monitor Samsung Odyssey",
+    "category": "Monitor",
+    "price": 310000,
+    "stock": 4,
+    "rating": 4.8,
+    "tags": [
+      "gaming",
+      "curved",
+      "premium"
+    ]
+  },
+  {
+    "productId": 114,
+    "name": "Monitor Dell P2422H",
+    "category": "Monitor",
+    "price": 110000,
+    "stock": 18,
+    "rating": 4.4,
+    "tags": [
+      "office",
+      "budget"
+    ]
+  },
+  {
+    "productId": 115,
+    "name": "Tablet Apple iPad Air",
+    "category": "Tablet",
+    "price": 390000,
+    "stock": 11,
+    "rating": 4.8,
+    "tags": [
+      "ios",
+      "premium",
+      "student"
+    ]
+  },
+  {
+    "productId": 116,
+    "name": "Tablet Samsung Galaxy Tab",
+    "category": "Tablet",
+    "price": 290000,
+    "stock": 15,
+    "rating": 4.5,
+    "tags": [
+      "android",
+      "office"
+    ]
+  },
+  {
+    "productId": 117,
+    "name": "Tablet Xiaomi Pad 6",
+    "category": "Tablet",
+    "price": 190000,
+    "stock": 22,
+    "rating": 4.6,
+    "tags": [
+      "android",
+      "budget",
+      "media"
+    ]
+  },
+  {
+    "productId": 118,
+    "name": "Keyboard Logitech MX Keys",
+    "category": "Accessories",
+    "price": 65000,
+    "stock": 35,
+    "rating": 4.7,
+    "tags": [
+      "office",
+      "wireless",
+      "keyboard"
+    ]
+  },
+  {
+    "productId": 119,
+    "name": "Keyboard Razer BlackWidow",
+    "category": "Accessories",
+    "price": 85000,
+    "stock": 9,
+    "rating": 4.6,
+    "tags": [
+      "gaming",
+      "mechanical",
+      "rgb"
+    ]
+  },
+  {
+    "productId": 120,
+    "name": "Mouse Logitech G502",
+    "category": "Accessories",
+    "price": 45000,
+    "stock": 50,
+    "rating": 4.8,
+    "tags": [
+      "gaming",
+      "wireless",
+      "mouse"
+    ]
+  },
+  {
+    "productId": 121,
+    "name": "Mouse Apple Magic Mouse",
+    "category": "Accessories",
+    "price": 55000,
+    "stock": 15,
+    "rating": 4.0,
+    "tags": [
+      "office",
+      "premium",
+      "ios"
+    ]
+  },
+  {
+    "productId": 122,
+    "name": "Headphones Sony WH-1000XM5",
+    "category": "Audio",
+    "price": 195000,
+    "stock": 8,
+    "rating": 4.9,
+    "tags": [
+      "premium",
+      "wireless",
+      "audio"
+    ]
+  },
+  {
+    "productId": 123,
+    "name": "Headphones Apple AirPods Pro",
+    "category": "Audio",
+    "price": 135000,
+    "stock": 25,
+    "rating": 4.8,
+    "tags": [
+      "ios",
+      "wireless",
+      "audio"
+    ]
+  },
+  {
+    "productId": 124,
+    "name": "Headphones JBL Tune",
+    "category": "Audio",
+    "price": 35000,
+    "stock": 60,
+    "rating": 4.3,
+    "tags": [
+      "budget",
+      "wireless",
+      "audio"
+    ]
+  },
+  {
+    "productId": 125,
+    "name": "Smartwatch Apple Watch S9",
+    "category": "Gadgets",
+    "price": 260000,
+    "stock": 13,
+    "rating": 4.8,
+    "tags": [
+      "ios",
+      "premium",
+      "fitness"
+    ]
+  },
+  {
+    "productId": 126,
+    "name": "Smartwatch Samsung Galaxy Watch",
+    "category": "Gadgets",
+    "price": 180000,
+    "stock": 17,
+    "rating": 4.6,
+    "tags": [
+      "android",
+      "fitness"
+    ]
+  },
+  {
+    "productId": 127,
+    "name": "Router ASUS RT-AX58U",
+    "category": "Network",
+    "price": 75000,
+    "stock": 12,
+    "rating": 4.5,
+    "tags": [
+      "wifi6",
+      "office",
+      "home"
+    ]
+  },
+  {
+    "productId": 128,
+    "name": "Router TP-Link Archer",
+    "category": "Network",
+    "price": 32000,
+    "stock": 28,
+    "rating": 4.2,
+    "tags": [
+      "budget",
+      "home"
+    ]
+  },
+  {
+    "productId": 129,
+    "name": "SSD Samsung 990 Pro 1TB",
+    "category": "Storage",
+    "price": 72000,
+    "stock": 45,
+    "rating": 4.9,
+    "tags": [
+      "pc",
+      "fast",
+      "storage"
+    ]
+  },
+  {
+    "productId": 130,
+    "name": "External HDD WD Elements 2TB",
+    "category": "Storage",
+    "price": 48000,
+    "stock": 33,
+    "rating": 4.4,
+    "tags": [
+      "budget",
+      "storage",
+      "backup"
+    ]
+  }
+]

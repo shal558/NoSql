@@ -1,0 +1,26 @@
+[
+  {
+    "orderId": "ORD-1",
+    "customerId": 501,
+    "total": 420000,
+    "status": "paid"
+  },
+  {
+    "orderId": "ORD-2",
+    "customerId": 501,
+    "total": 25000,
+    "status": "paid"
+  },
+  {
+    "orderId": "ORD-3",
+    "customerId": 502,
+    "total": 310000,
+    "status": "new"
+  },
+  {
+    "orderId": "ORD-4",
+    "customerId": 503,
+    "total": 950000,
+    "status": "paid"
+  }
+]

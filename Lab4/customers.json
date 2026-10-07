@@ -1,0 +1,20 @@
+[
+  {
+    "customerId": 501,
+    "name": "Aidar",
+    "email": "aidar@mail.ru",
+    "city": "Almaty"
+  },
+  {
+    "customerId": 502,
+    "name": "Dana",
+    "email": "dana@gmail.com",
+    "city": "Astana"
+  },
+  {
+    "customerId": 503,
+    "name": "Ilyas",
+    "email": "ilyas@yandex.ru",
+    "city": "Shymkent"
+  }
+]
