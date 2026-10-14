@@ -1,0 +1,15 @@
+
+MATCH (s:Service {name: 'Catalog Service'})
+SET s.criticality = 'high'
+RETURN s.name AS service,
+       s.criticality AS criticality;
+
+// Проверка всех сервисов после изменения
+MATCH (s:Service)
+RETURN s.name AS service,
+       s.criticality AS criticality
+ORDER BY s.name;
+
+// Финальный просмотр графа
+MATCH (n)-[r]->(m)
+RETURN n, r, m;

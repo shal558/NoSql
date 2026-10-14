@@ -1,0 +1,43 @@
+CREATE
+  (:Service {name: 'API Gateway', criticality: 'high'}),
+  (:Service {name: 'Auth Service', criticality: 'high'}),
+  (:Service {name: 'Order Service', criticality: 'high'}),
+  (:Service {name: 'Catalog Service', criticality: 'medium'}),
+  (:Service {name: 'Payment Service', criticality: 'high'}),
+  (:Service {name: 'Notification Service', criticality: 'low'}),
+  (:Server {name: 'App Server 1', cpu: 8, ram: 32}),
+  (:Server {name: 'App Server 2', cpu: 16, ram: 64}),
+  (:Database {name: 'Users DB', engine: 'PostgreSQL'}),
+  (:Database {name: 'Orders DB', engine: 'PostgreSQL'});
+
+
+
+MERGE (api:Service {name: 'API Gateway'})
+SET api.criticality = 'high';
+
+MERGE (auth:Service {name: 'Auth Service'})
+SET auth.criticality = 'high';
+
+MERGE (orders:Service {name: 'Order Service'})
+SET orders.criticality = 'high';
+
+MERGE (catalog:Service {name: 'Catalog Service'})
+SET catalog.criticality = 'medium';
+
+MERGE (payment:Service {name: 'Payment Service'})
+SET payment.criticality = 'high';
+
+MERGE (notify:Service {name: 'Notification Service'})
+SET notify.criticality = 'low';
+
+MERGE (s1:Server {name: 'App Server 1'})
+SET s1.cpu = 8, s1.ram = 32;
+
+MERGE (s2:Server {name: 'App Server 2'})
+SET s2.cpu = 16, s2.ram = 64;
+
+MERGE (users:Database {name: 'Users DB'})
+SET users.engine = 'PostgreSQL';
+
+MERGE (db:Database {name: 'Orders DB'})
+SET db.engine = 'PostgreSQL';

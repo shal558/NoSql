@@ -1,0 +1,56 @@
+
+// Запрос 1. Все узлы
+MATCH (n)
+RETURN n;
+
+MATCH (n)-[r]->(m)
+RETURN n, r, m;
+
+// Запрос 2. Сервисы высокой критичности
+MATCH (s:Service)
+WHERE s.criticality = 'high'
+RETURN s.name AS service,
+       s.criticality AS criticality;
+
+// Запрос 3. Сортировка сервисов по критичности
+MATCH (s:Service)
+RETURN s.name AS service,
+       s.criticality AS criticality
+ORDER BY s.criticality ASC;
+
+// Запрос 4. Сервисы на первом сервере
+MATCH (s:Service)-[:RUNS_ON]->
+      (srv:Server {name: 'App Server 1'})
+RETURN s.name AS service,
+       srv.name AS server;
+
+// Запрос 5. Прямые зависимости API Gateway
+MATCH (api:Service {name: 'API Gateway'})
+      -[:DEPENDS_ON]->(s)
+RETURN s.name AS dependency,
+       labels(s) AS nodeType;
+
+// Запрос 6. Количество узлов каждого типа
+MATCH (n)
+RETURN labels(n) AS nodeType,
+       count(n) AS total;
+
+// Запрос 7. Подключения серверов к базам данных
+MATCH (s:Server)-[:CONNECTS_TO]->(db:Database)
+RETURN s.name AS server,
+       db.name AS database;
+
+// Запрос 8. Количество связей каждого типа
+MATCH ()-[r]->()
+RETURN type(r) AS relationship,
+       count(r) AS total
+ORDER BY total DESC;
+
+// запрос 9. изменение значения 1 из сервисов 
+MATCH (s:Service {name: 'Catalog Service'})
+SET s.criticality = 'high'
+RETURN s.name, s.criticality;
+
+// Запрос 9. Весь граф со связями
+MATCH (n)-[r]->(m)
+RETURN n, r, m;

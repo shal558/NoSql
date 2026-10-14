@@ -1,0 +1,139 @@
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (auth:Service {name: 'Auth Service'})
+MERGE (api)-[:DEPENDS_ON]->(auth);
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (orders:Service {name: 'Order Service'})
+MERGE (api)-[:DEPENDS_ON]->(orders);
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (catalog:Service {name: 'Catalog Service'})
+MERGE (api)-[:DEPENDS_ON]->(catalog);
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (notify:Service {name: 'Notification Service'})
+MERGE (api)-[:DEPENDS_ON]->(notify);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (payment:Service {name: 'Payment Service'})
+MERGE (orders)-[:DEPENDS_ON]->(payment);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (notify:Service {name: 'Notification Service'})
+MERGE (orders)-[:DEPENDS_ON]->(notify);
+
+MATCH (auth:Service {name: 'Auth Service'}),
+      (users:Database {name: 'Users DB'})
+MERGE (auth)-[:DEPENDS_ON]->(users);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (orders)-[:DEPENDS_ON]->(db);
+
+MATCH (catalog:Service {name: 'Catalog Service'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (catalog)-[:DEPENDS_ON]->(db);
+
+MATCH (auth:Service {name: 'Auth Service'}),
+      (s1:Server {name: 'App Server 1'})
+MERGE (auth)-[:RUNS_ON]->(s1);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (s1:Server {name: 'App Server 1'})
+MERGE (orders)-[:RUNS_ON]->(s1);
+
+MATCH (catalog:Service {name: 'Catalog Service'}),
+      (s2:Server {name: 'App Server 2'})
+MERGE (catalog)-[:RUNS_ON]->(s2);
+
+MATCH (payment:Service {name: 'Payment Service'}),
+      (s2:Server {name: 'App Server 2'})
+MERGE (payment)-[:RUNS_ON]->(s2);
+
+MATCH (notify:Service {name: 'Notification Service'}),
+      (s1:Server {name: 'App Server 1'})
+MERGE (notify)-[:RUNS_ON]->(s1);
+
+MATCH (s1:Server {name: 'App Server 1'}),
+      (users:Database {name: 'Users DB'})
+MERGE (s1)-[:CONNECTS_TO]->(users);
+
+MATCH (s1:Server {name: 'App Server 1'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (s1)-[:CONNECTS_TO]->(db);
+
+MATCH (s2:Server {name: 'App Server 2'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (s2)-[:CONNECTS_TO]->(db);
+
+
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (auth:Service {name: 'Auth Service'})
+MERGE (api)-[:DEPENDS_ON]->(auth);
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (orders:Service {name: 'Order Service'})
+MERGE (api)-[:DEPENDS_ON]->(orders);
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (catalog:Service {name: 'Catalog Service'})
+MERGE (api)-[:DEPENDS_ON]->(catalog);
+
+MATCH (api:Service {name: 'API Gateway'}),
+      (notify:Service {name: 'Notification Service'})
+MERGE (api)-[:DEPENDS_ON]->(notify);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (payment:Service {name: 'Payment Service'})
+MERGE (orders)-[:DEPENDS_ON]->(payment);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (notify:Service {name: 'Notification Service'})
+MERGE (orders)-[:DEPENDS_ON]->(notify);
+
+MATCH (auth:Service {name: 'Auth Service'}),
+      (users:Database {name: 'Users DB'})
+MERGE (auth)-[:DEPENDS_ON]->(users);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (orders)-[:DEPENDS_ON]->(db);
+
+MATCH (catalog:Service {name: 'Catalog Service'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (catalog)-[:DEPENDS_ON]->(db);
+
+MATCH (auth:Service {name: 'Auth Service'}),
+      (s1:Server {name: 'App Server 1'})
+MERGE (auth)-[:RUNS_ON]->(s1);
+
+MATCH (orders:Service {name: 'Order Service'}),
+      (s1:Server {name: 'App Server 1'})
+MERGE (orders)-[:RUNS_ON]->(s1);
+
+MATCH (catalog:Service {name: 'Catalog Service'}),
+      (s2:Server {name: 'App Server 2'})
+MERGE (catalog)-[:RUNS_ON]->(s2);
+
+MATCH (payment:Service {name: 'Payment Service'}),
+      (s2:Server {name: 'App Server 2'})
+MERGE (payment)-[:RUNS_ON]->(s2);
+
+MATCH (notify:Service {name: 'Notification Service'}),
+      (s1:Server {name: 'App Server 1'})
+MERGE (notify)-[:RUNS_ON]->(s1);
+
+MATCH (s1:Server {name: 'App Server 1'}),
+      (users:Database {name: 'Users DB'})
+MERGE (s1)-[:CONNECTS_TO]->(users);
+
+MATCH (s1:Server {name: 'App Server 1'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (s1)-[:CONNECTS_TO]->(db);
+
+MATCH (s2:Server {name: 'App Server 2'}),
+      (db:Database {name: 'Orders DB'})
+MERGE (s2)-[:CONNECTS_TO]->(db);
+
