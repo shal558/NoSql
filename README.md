@@ -54,16 +54,14 @@ Teacher — id, name, department, experience
 
 
 
-ОтношениеНаправлениеСвойстваSTUDIESStudent → Coursesemester, gradeTEACHESTeacher → Coursehours5. Полный код и скриншотыЗадание 2. Ограничения + узлы + отношенияcypherCREATE CONSTRAINT student_id_unique IF NOT EXISTS
+ОтношениеНаправлениеСвойстваSTUDIESStudent → Coursesemester, gradeTEACHESTeacher → Coursehours5. Полный кодЗадание 2. Ограничения + узлы + отношенияcypherCREATE CONSTRAINT student_id_unique IF NOT EXISTS
 FOR (s:Student) REQUIRE s.id IS UNIQUE;
 
 CREATE CONSTRAINT course_id_unique IF NOT EXISTS
 FOR (c:Course) REQUIRE c.id IS UNIQUE;
 
 CREATE CONSTRAINT teacher_id_unique IF NOT EXISTS
-FOR (t:Teacher) REQUIRE t.id IS UNIQUE;Скриншот: создание ограничений (3 зелёные галочки)
-
-→ твой скриншот 121153.pngcypherMERGE (s1:Student {id: 1}) SET s1.name = "Aibek", s1.group = "IS-24-1", s1.year = 2;
+FOR (t:Teacher) REQUIRE t.id IS UNIQUE;cypherMERGE (s1:Student {id: 1}) SET s1.name = "Aibek", s1.group = "IS-24-1", s1.year = 2;
 MERGE (s2:Student {id: 2}) SET s2.name = "Aliya", s2.group = "IS-24-1", s2.year = 2;
 MERGE (s3:Student {id: 3}) SET s3.name = "Damir", s3.group = "IS-24-2", s3.year = 3;
 MERGE (s4:Student {id: 4}) SET s4.name = "Aigerim", s4.group = "IS-24-1", s4.year = 2;
@@ -79,9 +77,7 @@ MERGE (c5:Course {id: 105}) SET c5.title = "Machine Learning", c5.credits = 6, c
 MERGE (t1:Teacher {id: 201}) SET t1.name = "Instructor A", t1.department = "CS", t1.experience = 8;
 MERGE (t2:Teacher {id: 202}) SET t2.name = "Instructor B", t2.department = "CS", t2.experience = 5;
 MERGE (t3:Teacher {id: 203}) SET t3.name = "Dr. Smith", t3.department = "AI", t3.experience = 12;
-MERGE (t4:Teacher {id: 204}) SET t4.name = "Prof. Johnson", t4.department = "SE", t4.experience = 15;Скриншоты:
-Nodes (15) → 121438.png и 121455.png
-cypherMATCH (s:Student {id: 1}), (c:Course {id: 101}) MERGE (s)-[:STUDIES {semester: 5}]->(c);
+MERGE (t4:Teacher {id: 204}) SET t4.name = "Prof. Johnson", t4.department = "SE", t4.experience = 15;cypherMATCH (s:Student {id: 1}), (c:Course {id: 101}) MERGE (s)-[:STUDIES {semester: 5}]->(c);
 MATCH (s:Student {id: 1}), (c:Course {id: 103}) MERGE (s)-[:STUDIES {semester: 4}]->(c);
 MATCH (s:Student {id: 2}), (c:Course {id: 101}) MERGE (s)-[:STUDIES {semester: 5}]->(c);
 MATCH (s:Student {id: 2}), (c:Course {id: 104}) MERGE (s)-[:STUDIES {semester: 4}]->(c);
@@ -99,20 +95,11 @@ MATCH (t:Teacher {id: 201}), (c:Course {id: 103}) MERGE (t)-[:TEACHES {hours: 45
 MATCH (t:Teacher {id: 202}), (c:Course {id: 102}) MERGE (t)-[:TEACHES {hours: 50}]->(c);
 MATCH (t:Teacher {id: 203}), (c:Course {id: 105}) MERGE (t)-[:TEACHES {hours: 70}]->(c);
 MATCH (t:Teacher {id: 204}), (c:Course {id: 104}) MERGE (t)-[:TEACHES {hours: 40}]->(c);
-MATCH (t:Teacher {id: 204}), (c:Course {id: 103}) MERGE (t)-[:TEACHES {hours: 55}]->(c);Скриншоты:
-Создание отношений → 121633.png
-Граф STUDIES → 123011.png
-Граф TEACHES → 123113.png
-Узлы Student → 123023.png
-Узлы Teacher → 123033.png
-Задание 3. MATCH + ORDER BY + LIMITcypherMATCH (s:Student) RETURN s;
+MATCH (t:Teacher {id: 204}), (c:Course {id: 103}) MERGE (t)-[:TEACHES {hours: 55}]->(c);Задание 3. MATCH + ORDER BY + LIMITcypherMATCH (s:Student) RETURN s;
 
 MATCH (s:Student)
 RETURN s.name AS student, s.group AS groupName, s.year AS year
-ORDER BY student LIMIT 10;Скриншоты:
-Граф 6 студентов → 122545.png
-Таблица с сортировкой → 122604.png
-Задание 4. Запросы по связямcypherMATCH (s:Student)-[:STUDIES]->(c:Course)
+ORDER BY student LIMIT 10;Задание 4. Запросы по связямcypherMATCH (s:Student)-[:STUDIES]->(c:Course)
 RETURN s.name AS student, c.title AS course;
 
 MATCH (t:Teacher)-[:TEACHES]->(c:Course)<-[:STUDIES]-(s:Student)
@@ -120,52 +107,37 @@ RETURN t.name AS teacher, c.title AS course, s.name AS student
 ORDER BY teacher, course;
 
 MATCH (s:Student {name: "Aibek"})-[:STUDIES]->(c:Course)<-[:TEACHES]-(t:Teacher)
-RETURN s.name AS student, c.title AS course, t.name AS teacher;Скриншоты:
-Одношаговый переход → 122716.png
-Двухшаговый запрос → 122725.png
-Курсы Aibek → 122736.png
-Задание 5. WHEREcypherMATCH (s:Student)
+RETURN s.name AS student, c.title AS course, t.name AS teacher;Задание 5. WHEREcypherMATCH (s:Student)
 WHERE s.group = "IS-24-1"
 RETURN s.name, s.year;
 
 MATCH (c:Course)
 WHERE c.credits >= 5
 RETURN c.title, c.credits
-ORDER BY c.credits DESC;Скриншоты:
-Фильтр по группе → 122839.png
-Фильтр по credits → 122847.png
-Задание 6. SETcypherMATCH (s:Student {id: 1})
+ORDER BY c.credits DESC;Задание 6. SETcypherMATCH (s:Student {id: 1})
 SET s.year = 3
 RETURN s;
 
 MATCH (s:Student {id: 1})-[r:STUDIES]->(c:Course {id: 101})
 SET r.grade = "A"
-RETURN s.name, r.semester, r.grade, c.title;Скриншоты:
-Изменение year → 122948.png
-Добавление grade → 122957.png
-Задание 7. DETACH DELETEcypherCREATE (:Temp {id: 999, note: "delete-me"});
+RETURN s.name, r.semester, r.grade, c.title;Задание 7. DETACH DELETEcypherCREATE (:Temp {id: 999, note: "delete-me"});
 
 MATCH (n:Temp {id: 999})
 DETACH DELETE n;
 
 MATCH (n:Temp {id: 999})
-RETURN count(n) AS remaining;Скриншот: remaining = 0 → 123200.pngЗадание 8. Проверка MERGEcypherMATCH (s:Student) RETURN count(s) AS students;
+RETURN count(n) AS remaining;Задание 8. Проверка MERGEcypherMATCH (s:Student) RETURN count(s) AS students;
 MATCH (c:Course)  RETURN count(c) AS courses;
 MATCH (t:Teacher) RETURN count(t) AS teachers;
-MATCH ()-[r]->()  RETURN count(r) AS relationships;Скриншоты:
-students = 6 → 123255.png
-courses = 5 → 123304.png
-teachers = 4 → 123316.png
-relationships = 18 → 123324.png
-Дополнительное заданиеcypherMATCH (a:Student)-[:STUDIES]->(c:Course)<-[:STUDIES]-(b:Student)
+MATCH ()-[r]->()  RETURN count(r) AS relationships;Дополнительное заданиеcypherMATCH (a:Student)-[:STUDIES]->(c:Course)<-[:STUDIES]-(b:Student)
 WHERE a.id < b.id
 RETURN a.name AS firstStudent,
        b.name AS secondStudent,
        collect(DISTINCT c.title) AS sharedCourses
-ORDER BY firstStudent, secondStudent;Скриншот: пары студентов с общими курсами → 123423.png6. Пояснения
+ORDER BY firstStudent, secondStudent;6. Пояснения
 MATCH — ищет шаблон в графе
 MERGE — ищет или создаёт (нет дублей)
 WHERE — фильтрует результаты
 SET — изменяет свойства
 DETACH DELETE — удаляет узел вместе со связями
-7. ВыводВ ходе работы создан граф из 15 узлов и 18 отношений. Освоены основные операции Cypher: создание, чтение, фильтрация, изменение и удаление. Использованы MERGE и ограничения уникальности для предотвращения дублей. Графовая модель удобна для анализа связей между сущностями.
+7. ВыводВ ходе работы создан граф из 15 узлов и 18 отношений. Освоены основные операции Cypher: создание, чтение, фильтрация, изменение и удаление. Использованы MERGE и ограничения уникальности для предотвращения дублей. Графовая модель удобна для анализа связей между сущностями
