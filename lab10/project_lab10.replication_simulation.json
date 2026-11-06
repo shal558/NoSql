@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6aed53034bb438c8a153c206"
+  },
+  "node": "Node1",
+  "port": 27101,
+  "role": "SECONDARY",
+  "status": "ACTIVE"
+},
+{
+  "_id": {
+    "$oid": "6aed53034bb438c8a153c207"
+  },
+  "node": "Node2",
+  "port": 27102,
+  "role": "PRIMARY",
+  "status": "ACTIVE"
+},
+{
+  "_id": {
+    "$oid": "6aed53034bb438c8a153c208"
+  },
+  "node": "Node3",
+  "port": 27103,
+  "role": "SECONDARY",
+  "status": "ACTIVE"
+}]
