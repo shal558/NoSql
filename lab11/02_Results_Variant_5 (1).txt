@@ -1,0 +1,120 @@
+РЕЗУЛЬТАТЫ СИМУЛЯЦИИ
+Лабораторная работа №11 — Вариант 5: Библиотека
+
+Дата: 2026-11-15
+Seed: 42 (фиксированный)
+N = 12 000 документов (выдач)
+Q = 30 000 запросов
+SHARDS = 3
+
+Поля:
+  reader_id  — идентификатор читателя (0..2499)
+  genre_id   — жанр книги (0..4)
+  loan_id    — последовательный id выдачи
+
+======================================================================
+1. ИСХОДНЫЙ КОД (simulation_v5.py)
+======================================================================
+import random, hashlib
+from collections import Counter
+
+random.seed(42)
+N, Q, SHARDS = 12000, 30000, 3
+
+rows = [dict(reader_id=i % 2500, genre_id=i % 5, loan_id=i) for i in range(N)]
+
+def stable_hash(value):
+    digest = hashlib.sha256(str(value).encode()).digest()
+    return int.from_bytes(digest[:8], 'big')
+
+def low_card(row):
+    return row['genre_id'] % SHARDS
+
+def hashed_reader(row):
+    return stable_hash(row['reader_id']) % SHARDS
+
+def range_loan(row):
+    return min(row['loan_id'] // (N // SHARDS), SHARDS - 1)
+
+def describe(name, assign, requests):
+    docs = Counter(assign(r) for r in rows)
+    load = Counter(assign(r) for r in requests)
+    d = [docs[i] for i in range(SHARDS)]
+    q = [load[i] for i in range(SHARDS)]
+    print(name, 'docs=', d, 'queries=', q,
+          'doc_max_mean=', round(max(d)/(sum(d)/SHARDS), 2),
+          'query_max_mean=', round(max(q)/(sum(q)/SHARDS), 2))
+
+uniform = random.choices(rows, k=Q)
+hot_rows = [r for r in rows if r['genre_id'] == 0]
+hot = [random.choice(hot_rows) if random.random() < 0.6 else random.choice(rows)
+       for _ in range(Q)]
+
+for name, fn in [('genre_id', low_card),
+                 ('hashed_reader', hashed_reader),
+                 ('range_loan', range_loan)]:
+    describe(name + '/uniform', fn, uniform)
+    describe(name + '/hot', fn, hot)
+
+======================================================================
+2. РЕЗУЛЬТАТЫ ЗАПУСКА
+======================================================================
+genre_id/uniform      docs= [4800, 4800, 2400]  queries= [11947, 12018, 6035]  max/mean= 1.20
+genre_id/hot          docs= [4800, 4800, 2400]  queries= [22828, 4822, 2350]   max/mean= 2.28
+hashed_reader/uniform docs= [3866, 3805, 4329]  queries= [9608, 9435, 10957]   max/mean= 1.10
+hashed_reader/hot     docs= [3866, 3805, 4329]  queries= [9261, 9774, 10965]   max/mean= 1.10
+range_loan/uniform    docs= [4000, 4000, 4000]  queries= [10046, 9958, 9996]   max/mean= 1.00
+range_loan/hot        docs= [4000, 4000, 4000]  queries= [9967, 9985, 10048]   max/mean= 1.00
+
+======================================================================
+3. ТАБЛИЦА РЕЗУЛЬТАТОВ
+======================================================================
+Ключ / нагрузка            | Документы A/B/C     | Запросы A/B/C          | Max/mean
+---------------------------|---------------------|------------------------|----------
+genre_id / uniform         | 4800 / 4800 / 2400  | 11947 / 12018 / 6035   | 1.20
+genre_id / hot             | 4800 / 4800 / 2400  | 22828 / 4822 / 2350    | 2.28
+hashed_reader / uniform    | 3866 / 3805 / 4329  | 9608 / 9435 / 10957    | 1.10
+hashed_reader / hot        | 3866 / 3805 / 4329  | 9261 / 9774 / 10965    | 1.10
+range_loan / uniform       | 4000 / 4000 / 4000  | 10046 / 9958 / 9996    | 1.00
+range_loan / hot           | 4000 / 4000 / 4000  | 9967 / 9985 / 10048    | 1.00
+
+======================================================================
+4. АНАЛИЗ
+======================================================================
+• genre_id (низкая кардинальность = 5):
+  - Документы уже перекошены.
+  - При hot-нагрузке (60 % запросов к одному жанру) max/mean = 2.28 → сильный горячий шард.
+
+• hashed_reader:
+  - Документы и запросы распределены стабильно (max/mean ≈ 1.08–1.10).
+  - Даже при hot-нагрузке по жанру перекос почти не появляется.
+  - Лучший кандидат.
+
+• range_loan:
+  - Идеально ровные документы и запросы в симуляции.
+  - В реальности монотонный loan_id создаёт «горячий хвост» при последовательных вставках.
+
+Вывод: равномерное количество документов НЕ гарантирует равномерную нагрузку
+(особенно видно на genre_id/hot).
+
+======================================================================
+5. ИНСТРУКЦИЯ ПО ЗАПУСКУ
+======================================================================
+python simulation_v5.py
+Результаты полностью воспроизводимы благодаря seed=42.
+
+======================================================================
+6. ЭКСПЕРИМЕНТ С 80% ОДНОГО ЖАНРА (Шаг 4 лабораторной)
+======================================================================
+Распределение genre_id: {0: 9600, 1: 600, 2: 600, 3: 600, 4: 600}
+Доля genre_id=0: 80.0%
+
+genre_id/uniform      docs= [10200, 1200, 600]  queries= [25512, 2974, 1514]  max/mean= 2.55
+genre_id/hot          docs= [10200, 1200, 600]  queries= [28167, 1206, 627]   max/mean= 2.82
+hashed_reader/uniform docs= [3866, 3805, 4329]  queries= [9608, 9435, 10957]  max/mean= 1.10
+hashed_reader/hot     docs= [3866, 3805, 4329]  queries= [9604, 9499, 10897]  max/mean= 1.09
+range_loan/uniform    docs= [4000, 4000, 4000]  queries= [10046, 9958, 9996]  max/mean= 1.00
+range_loan/hot        docs= [4000, 4000, 4000]  queries= [11409, 11526, 7065]  max/mean= 1.15
+
+Вывод: при сильном перекосе данных ключ genre_id полностью непригоден.
+Hashed reader_id остаётся стабильным — подтверждение правильности выбора.
